@@ -1,0 +1,128 @@
+body {background-color: #fdfd96;}
+a {color: black;}
+/* visited link */
+a:visited {
+  color: blue;
+}
+/* mouse over link */
+a:hover {
+  color: red;
+}
+h1 {font-family: "arial";}
+h2 {font-family: "arial";}
+p {font-family: "georgia";}
+li {font-family: "georgia";}
+a {font-family: "georgia";}
+img {height: 150px; width: 150px;}
+h1 {text-align: center;}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;}
+h2 {text-align: center;}
+p {text-align: center;}
+ul {text-align: center;}
+li {text-align: center;}
+
+h1 {
+  background-color: white;}
+h1.solid {border-style: solid;}
+h1 {border-style: solid; border-color: blue;}
+h1 {border: 1px solid white;
+  border-radius: 0px;}
+
+body {margin-top: auto; margin-bottom: auto; margin-rigth: auto; margin-left: auto;}
+p {font-size: 18px;}
+li {font-size: 18px;}
+a {font-size: 18px;}
+a:link, a:visited {
+  background-color: blue;
+  color: yellow;
+  border: 2px solid white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;}
+
+a:hover, a:active {
+  background-color: white;
+  color: blue;}
+div {text-align: center;}
+ul {list-style-position: inside;}
+h1 {line-height: ;}
+h2 {line-height: 3.0;}
+p {line-height: 3.0;}
+ul {line-height: 3.0;}
+h6 {line-height: 4.0;}
+h6 {
+  background-color: white;}
+p2 {border: 1px solid white;
+  border-radius: 0px;}
+
+
+
+
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
+.mensagem {
+	will-change: transform;
+	padding: 100px;
+	box-sizing: border-box;
+  position: center;
+	bottom: 0;
+	left: 0;
+	width: 100vw;
+	transform: translateY(100%);
+	background: #ef5350;
+	color: rgba(0,0,0,.6);
+	font-weight: bold;
+	background: #454545;
+	color: white;
+	font-weight: normal;
+	animation: toast 7s ease forwards;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.1);
+	text-align: justify;
+}
+
+@keyframes toast {
+	0%, 100% {
+		opacity: 0;
+		transform: translateY(100%)
+	}
+	10%, 90% {
+		opacity: 1;
+		transform: translateY(0%)
+	}
+}
+
+@media (min-width: 679px){
+  
+	.mensagem {
+		bottom: 5%;
+		width: auto;
+		text-align: justify;
+		transform: translateX(100vw);
+	}
+
+	@keyframes toast {
+		0%, 100% {
+			opacity: 0;
+			transform: translateX(100vw)
+		}
+		10%, 90% {
+			opacity: 1;
+			transform: translateX(calc(calc(-100% + 100vw) - 5vw))
+		}
+	}
+}
